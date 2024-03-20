@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+}
+
+
+.contenedor{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(235, 245, 246);
+    grid-template-areas: "header header"
+    "main aside";
+    grid-template-rows: 1fr 4fr;
+}
+
+.header{
+    grid-area: header;
+    p{
+        color: rgb(61, 95, 104);
+        padding: 10px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        width: 90%;
+        font-size: 20px;
+        
+    }
+}
+
+.main{
+    grid-area: main;
+    padding: 1%;
+
+
+    .mainflex{
+        display: flex;
+        flex-direction: column;
+        .botonflex{
+            display: flex;
+
+        }
+        
+        
+    }
+    .texto{
+        background-color: white;
+        color: rgb(61, 95, 104);
+        border-style: none;
+        height: 300px;
+        width: 400px;
+        box-shadow: 0 0 5px rgba(64, 64, 64, 0.737); 
+        resize: none;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        border-radius: 10px;
+    }
+}
+
+.aside{
+    grid-area: aside;
+    padding: 1%;
+
+    .asideflex{
+        display: flex;
+        flex-direction: column;
+
+        .textoResultado{
+            background-color: white;
+            color: rgb(61, 95, 104);
+            border-style: none;
+            height: 300px;
+            width: 400px;
+            box-shadow: 0 0 5px rgba(64, 64, 64, 0.737); 
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            border-radius: 10px;
+
+        }
+    
+    }
+
+}
+
+input{
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(77, 138, 191);
+    border-radius: 10px;
+    border-style: none;
+    border: solid rgb(194, 194, 194) 1px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
